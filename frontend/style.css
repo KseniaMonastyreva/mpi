@@ -12,6 +12,29 @@ header {
   text-align: center;
 }
 
+nav {
+  max-width: 900px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav button {
+  background: white;
+  color: #2F80ED;
+  border: 1px solid #2F80ED;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: #2F80ED;
+  color: white;
+}
+
 main {
   max-width: 900px;
   margin: 30px auto;
@@ -26,8 +49,17 @@ section {
   margin-bottom: 20px;
 }
 
+.page {
+  display: none;
+}
+
 h2 {
   color: #2F80ED;
+}
+
+h3 {
+  margin-top: 22px;
+  color: #111827;
 }
 
 input,
@@ -41,6 +73,7 @@ textarea {
   border: 1px solid #E5E7EB;
   border-radius: 8px;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 textarea {
@@ -59,6 +92,34 @@ button {
 
 button:hover {
   background: #1c6ed8;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 16px;
+  width: 250px;
+  background: #FAFAFA;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2F80ED;
+}
+
+.hint {
+  margin-top: 15px;
+  padding: 12px;
+  border-left: 4px solid #2F80ED;
+  background: #F3F7FF;
+  border-radius: 8px;
 }
 
 pre {
