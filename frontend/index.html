@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Classroom of the Elite Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>Classroom of the Elite</h1>
+  <p>Демо фронтенд для показа use cases</p>
+</header>
+
+<main>
+  <section>
+    <h2>1. Создать пользователя</h2>
+    <input id="username" placeholder="username, например Ayanokoji" />
+    <input id="password" placeholder="password, например 1234" />
+    <select id="role">
+      <option value="STUDENT">STUDENT</option>
+      <option value="EXAMINER">EXAMINER</option>
+      <option value="ADMIN">ADMIN</option>
+    </select>
+    <button onclick="createUser()">Создать пользователя</button>
+    <button onclick="getUsers()">Показать пользователей</button>
+  </section>
+
+  <section>
+    <h2>2. Создать экзамен</h2>
+    <input id="examTitle" placeholder="Название экзамена" />
+    <button onclick="createExam()">Создать экзамен</button>
+  </section>
+
+  <section>
+    <h2>3. Управление экзаменом</h2>
+    <input id="sessionId" type="number" placeholder="ID экзамена" />
+    <button onclick="getExam()">Получить экзамен</button>
+    <button onclick="startExam()">Запустить экзамен</button>
+    <button onclick="endExam()">Завершить экзамен</button>
+  </section>
+
+  <section>
+    <h2>4. Ответ студента</h2>
+    <input id="answerSessionId" type="number" placeholder="ID экзамена" />
+    <input id="answerUserId" type="number" placeholder="ID студента" />
+    <input id="questionId" type="number" placeholder="ID вопроса, например 1" />
+    <textarea id="answerText" placeholder="Ответ студента"></textarea>
+    <button onclick="sendAnswer()">Отправить ответ</button>
+    <button onclick="getAnswers()">Показать ответы</button>
+  </section>
+
+  <section>
+    <h2>5. Нарушение</h2>
+    <input id="violationSessionId" type="number" placeholder="ID экзамена" />
+    <input id="violationUserId" type="number" placeholder="ID студента" />
+    <textarea id="violationDescription" placeholder="Описание нарушения"></textarea>
+    <input id="evidencePath" placeholder="Путь к доказательству, например screenshot.png" />
+    <button onclick="reportViolation()">Зафиксировать нарушение</button>
+    <button onclick="getViolations()">Показать нарушения</button>
+  </section>
+
+  <section>
+    <h2>6. Тайное голосование</h2>
+    <input id="voteSessionId" type="number" placeholder="ID голосования/сессии" />
+    <input id="encryptedValue" placeholder="Голос, например EXCLUDE или KEEP" />
+    <button onclick="sendVote()">Отправить голос</button>
+    <button onclick="getVoteResults()">Показать результаты</button>
+  </section>
+
+  <section>
+    <h2>Ответ сервера</h2>
+    <pre id="result">Здесь появится ответ backend...</pre>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

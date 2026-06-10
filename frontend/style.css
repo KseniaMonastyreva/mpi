@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #000;
+}
+
+header {
+  background: #2F80ED;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2F80ED;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+button {
+  background: #2F80ED;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 8px 6px 0 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1c6ed8;
+}
+
+pre {
+  background: #111827;
+  color: #27AE60;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
